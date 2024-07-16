@@ -11,7 +11,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 sync . s3://your-bucket-name --delete
+      - aws s3 sync . s3://lifecycleaws --delete
 artifacts:
   files:
     - '**/*'
